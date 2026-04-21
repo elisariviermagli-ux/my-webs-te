@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisa Rivier</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <canvas id="trailCanvas"></canvas>
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <section id="page-home" class="view">
+    <canvas id="trailCanvas"></canvas>
+    <div class="content">
+        <h1>
+          <header>
+            <nav class="nav-bar">
+              <button onclick="router('page-home')">Elisa R.</button>
+              <button onclick="router('page-contact')">contact</button>
+      </nav></header></h1>
+
+        <button id=projects-btn onclick="router('page-projects')">PROJETS</button>
+        <button id="gallery-btn" onclick="router('page-gallery')">GALERIE</button>
+        <button id=videos-btn onclick="router('page-videos')">AUDIOVISUEL</button>
+
+
+
+
+    </div>
+</section>
+
+<section id="page-projects" class="view">
+ <header>
+    <nav class="nav-bar">
+        <button onclick="router('page-home')">Elisa R.</button>
+        <button onclick="router('page-projects')">PROJETS</button>
+        <button onclick="router('page-gallery')">GALERIE</button>
+        <button onclick="router('page-videos')">AUDIOVISUEL</button>
+        <button onclick="router('page-contact')">contact</button>
+    </nav>
+</header>
+
+<div class="project-row">        
+        <div class="project-visuals">
+            <img src="images/KINALIADA/KIN.1.jpeg" alt="plan complet de l'ile" class="project-img">
+            <img src="images/KINALIADA/KIN.2.jpeg" alt="coupe texturée des chambres" class="project-img">
+        </div>
+
+        <div class="project-id-card">
+            <ul class="id-details">
+                <li class="underline">KINALIADA</li>
+                <li>02.03.2026 - en cours</li>
+                <li>Kinaliada, 34977 Îles des Princes/Istanbul</li>  
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="project-row">        
+        <div class="project-visuals">
+            <img src="images/AYVANSARAY/AYVA.1.jpeg" alt="Vue 1" class="project-img">
+            <img src="images/AYVANSARAY/AYVA.2.png" alt="Vue 2" class="project-img">
+        </div>
+
+        <div class="project-id-card">
+            <ul class="id-details">
+                <li class="underline">AYVANSARAY</li>
+                <li>26.09.2025  -  27.01.2026</li>
+                <li>Ayvansaray, Molla Şakir Sk. No:15, Fatih/İstanbul, Türkiye</li>  
+            </ul>
+        </div>
+        
+    </div>
+
+                <div class="project-row">        
+        <div class="project-visuals">
+            <img src="images/PENTHIEVRE/PENTH.1.png" alt="Vue 1" class="project-img">
+            <img src="images/PENTHIEVRE/PENTH.3.jpeg" alt="Vue 2" class="project-img">
+        </div>
+
+        <div class="project-id-card">
+            <ul class="id-details">
+                <li class="underline">PENTHIEVRE</li>
+                <li>01.07.2025  -  31.07.2025</li>
+                <li>Opération située au 1-3 rue de Penthièvre, Paris 8e</li>
+               
+            </ul>
+        </div>
+
+    </div>
+
+        <div class="project-row">        
+        <div class="project-visuals">
+            <img src="images/IMMER.SON/IMMER.1.jpeg" alt="Vue 1" class="project-img">
+            <img src="images/IMMER.SON/IMMER.2.jpeg" alt="Vue 2" class="project-img">
+        </div>
+
+        <div class="project-id-card">
+            <ul class="id-details">
+                <li class="underline">IMMER.SON</li>
+                <li>21.02.2025  - 10.06.2025</li>
+                <li>47-43 Rue de l'Ermitage, 75020 Paris</li>  
+            </ul>
+        </div>
+
+    </div>
+
+            <div class="project-row">        
+        <div class="project-visuals">
+            <img src="images/MAISONS.ASSOCIEES/MAISONS.1.jpeg" alt="Vue 1" class="project-img">
+            <img src="images/MAISONS.ASSOCIEES/MAISONS.2.jpeg" alt="Vue 2" class="project-img">
+        </div>
+
+        <div class="project-id-card">
+            <ul class="id-details">
+                <li class="underline">LES MAISONS ASSOCIEES</li>
+                <li>04.10.2024  -  25.01.2025</li>
+               
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="page-gallery" class="view">
+   <header>
+    <nav class="nav-bar">
+        <button onclick="router('page-home')">Elisa R.</button>
+        <button onclick="router('page-projects')">PROJETS</button>
+        <button onclick="router('page-gallery')">GALERIE</button>
+        <button onclick="router('page-videos')">AUDIOVISUEL</button>
+        <button onclick="router('page-contact')">contact</button>
+    </nav>
+</header>
+
+<div class="gallery-container">
+        
+        <div class="gallery-item">
+            <img src="images/GALERIE/SKETCHIST.1.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/GALERIE/SKETCHIST.2.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/GALERIE/SKETCHIST.3.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/GALERIE/SKETCHIST.4.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+        
+         <div class="gallery-item">
+            <img src="images/GALERIE/PARIS.1.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+         <div class="gallery-item">
+            <img src="images/GALERIE/PARIS.2.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+         <div class="gallery-item">
+            <img src="images/GALERIE/NU.2.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/GALERIE/NU.3.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/GALERIE/NU.4.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/GALERIE/NU.5.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/GALERIE/NU.6.jpeg" alt="Description" onclick="openLightbox(this.src)">
+        </div>
+
+        </div>
+   
+</section>
+
+<section id="page-videos" class="view">
+   <header>
+    <nav class="nav-bar">
+        <button onclick="router('page-home')">Elisa R.</button>
+        <button onclick="router('page-projects')">PROJETS</button>
+        <button onclick="router('page-gallery')">GALERIE</button>
+        <button onclick="router('page-videos')">AUDIOVISUEL</button>
+        <button onclick="router('page-contact')">contact</button>
+    </nav>
+  </header>
+  
+  <div class="project-row">
+        
+        <div class="video-container-wrapper">
+            <div class="video-responsive">
+                <iframe src="https://www.youtube-nocookie.com/embed/MracNuOx-No" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="project-id-card">
+            <ul class="id-details">
+                <li>2025</li>
+                <li>Court-métrage</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+    </div>
+
+</section>
+
+<section id="page-detail" class="view">
+    <div id="detail-content"></div>
+</section>
+
+<section id="page-contact" class="view">
+    <div id="detail-content"></div>
+       <header>
+    <nav class="nav-bar">
+        <button onclick="router('page-home')">Elisa R.</button>
+        <button onclick="router('page-projects')">PROJETS</button>
+        <button onclick="router('page-gallery')">GALERIE</button>
+        <button onclick="router('page-videos')">AUDIOVISUEL</button>
+        <button onclick="router('page-contact')">contact</button>
+    </nav>
+</header>
+<div class="project-row"> 
+    <img class=contact-img src="images/ICONE.FULL.jpeg" alt="Vue 1" class="project-img ">
+            <div class="project-id-card">
+            <ul class="id-details">
+                <li class="underline">contact</li>
+                <li>elisa.rivier@gmail.com</li>
+            </ul>
+        </div>
+
+</section>
+    
+<script src="script.js"></script>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+</body>
+</html>
